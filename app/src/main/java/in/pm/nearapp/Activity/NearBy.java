@@ -2,15 +2,20 @@ package in.pm.nearapp.Activity;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.AlertDialog;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.FragmentActivity;
 import android.Manifest;
 
+import android.content.Context;
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Address;
 import android.location.Geocoder;
 import android.location.Location;
+import android.location.LocationManager;
 import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
@@ -58,6 +63,8 @@ public class NearBy extends FragmentActivity implements OnMapReadyCallback,
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_maps);
 
+        statusCheck();
+
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M)
         {
             checkLocationPermission();
@@ -67,6 +74,12 @@ public class NearBy extends FragmentActivity implements OnMapReadyCallback,
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
+
+        final LocationManager manager = (LocationManager)this.getSystemService(Context.LOCATION_SERVICE );
+        if ( !manager.isProviderEnabled( LocationManager.GPS_PROVIDER ) )
+            Toast.makeText(this, "GPS is disable!", Toast.LENGTH_LONG).show();
+        else
+            Toast.makeText(this, "GPS is Enable!", Toast.LENGTH_LONG).show();
     }
 
     @Override
@@ -282,5 +295,31 @@ public class NearBy extends FragmentActivity implements OnMapReadyCallback,
 
     @Override
     public void onConnectionFailed(@NonNull ConnectionResult connectionResult) {
+    }
+
+    public void statusCheck() {
+        final LocationManager manager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
+
+        if (!manager.isProviderEnabled(LocationManager.GPS_PROVIDER)) {
+            buildAlertMessageNoGps();
+
+        }
+    }
+    private void buildAlertMessageNoGps() {
+        final AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setMessage("Your GPS seems to be disabled, do you want to enable it?")
+                .setCancelable(false)
+                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                    public void onClick(final DialogInterface dialog, final int id) {
+                        startActivity(new Intent(android.provider.Settings.ACTION_LOCATION_SOURCE_SETTINGS));
+                    }
+                })
+                .setNegativeButton("No", new DialogInterface.OnClickListener() {
+                    public void onClick(final DialogInterface dialog, final int id) {
+                        dialog.cancel();
+                    }
+                });
+        final AlertDialog alert = builder.create();
+        alert.show();
     }
 }
