@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">NearBy</string>
+
+    <!--Misc texts-->
+    <string name="forgot_password">Forgot password?</string>
+    <string name="no_account">Don\’t have an account?</string>
+    <string name="have_account">Have an account?</string>
+    <string name="divider_or">OR</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="signup_btn_label">Signup</string>
+    <string name="signup_title">Sign up</string>
+    <!--Welcome messages-->
+    <string name="splash_welcome_txt">Easiest way to\nfind the best product</string>
+    <string name="login_welcome_txt">Hello there !\nWelcome Back</string>
+    <string name="signup_welcome_txt">Hello there !\nWelcome to you</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="verification_code">Verification Code</string>
+    <string name="verification_code_subtext">Please type the otp which send to you earlier</string>
+</resources>
