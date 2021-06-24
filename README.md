@@ -15,7 +15,7 @@ https://github.com/prak899/NearBy.git
 
 <img src="https://user-images.githubusercontent.com/58839967/123246303-45f16c00-d503-11eb-9794-c61bf637f878.png" width="30%"></img> 
 <img src="https://user-images.githubusercontent.com/58839967/123246348-4f7ad400-d503-11eb-914e-1fc58e7966e8.png" width="30%"></img> 
-<img src="https://user-images.githubusercontent.com/58839967/123246376-59043c00-d503-11eb-9f27-b3a6961df408.png"></img>
+<img src="https://user-images.githubusercontent.com/58839967/123246376-59043c00-d503-11eb-9f27-b3a6961df408.png" width="30%"></img>
 
 ## Usage
 ## Contributing
