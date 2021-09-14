@@ -40,4 +40,5 @@
     <string name="gym">Bangla</string>
     <string name="settings">Asam</string>
     <string name="delete">Chhatishgarh</string>
+    <string name="choose_language">Choose language</string>
 </resources>

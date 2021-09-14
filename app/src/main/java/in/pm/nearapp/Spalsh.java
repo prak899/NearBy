@@ -84,7 +84,7 @@ public class Spalsh extends AppCompatActivity {
             startActivity(new Intent(Spalsh.this, NearBy.class));
             Spalsh.this.finish();
         } else {
-            startActivity(new Intent(Spalsh.this, SignIn.class));
+            startActivity(new Intent(Spalsh.this, DashBoard.class));
         }
     }
 }
