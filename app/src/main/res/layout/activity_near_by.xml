@@ -13,7 +13,7 @@
         android:layout_alignParentBottom="true"
         android:layout_margin="16dp"
         android:background="@color/teal_700"
-        android:text="Find NearBy Places"
+        android:text="@string/find_nearby_places"
         android:textColor="#FFFFFF"
         android:textStyle="bold" />
 

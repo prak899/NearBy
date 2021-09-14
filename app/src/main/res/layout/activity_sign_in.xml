@@ -33,6 +33,7 @@
 
 
         <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/et_text"
             android:layout_marginTop="16dp"
             style="@style/EditTextStyle"
             android:hint="Enter number"
@@ -46,6 +47,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"/>
         </com.google.android.material.textfield.TextInputLayout>
+        <TextView
+            android:id="@+id/chooseLanguage"
+            android:gravity="center"
+            android:layout_below="@+id/et_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Language"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
         <RelativeLayout
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"

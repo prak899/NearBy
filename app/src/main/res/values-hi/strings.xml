@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="forgot_password">पासवर्ड भूल गए?</string>
+    <string name="no_account">खाता नहीं है?</string>
+    <string name="have_account">खाता होना?</string>
+    <string name="divider_or">या</string>
+    <string name="title_activity_settings">समायोजन</string>
+    <string name="signup_btn_label">साइन अप करें</string>
+    <string name="signup_title">साइन अप करें</string>
+    <!--Welcome messages-->
+    <string name="splash_welcome_txt">सर्वश्रेष्ठ उत्पाद खोजने का सबसे आसान तरीका</string>
+    <string name="login_welcome_txt">नमस्ते!\nवापस स्वागत है</string>
+    <string name="signup_welcome_txt">नमस्ते!\nआपका स्वागत है</string>
+    <string name="title_activity_maps">नक्शा</string>
+    <string name="verification_code">पुष्टि संख्या</string>
+    <string name="verification_code_subtext">कृपया वह ओटीपी टाइप करें जो आपको पहले भेजता है</string>
+    <string name="next">अगला</string>
+    <string name="skip">छोड़ें</string>
+    <string name="hospitals">अस्पताल</string>
+    <string name="schools">विद्यालय</string>
+    <string name="restautants">रेस्टोरेंट</string>
+    <string name="atm">एटीएम</string>
+    <string name="find_nearby_places">आस-पास के स्थान खोजें</string>
+    <string name="check_locations">स्थानों की जाँच करें</string>
+    <string name="make_a_move">कार्यवाही करें</string>
+    <string name="go_for_dine">भोजन के लिए जाओ</string>
+    <string name="explore_now">अभी एक्सप्लोर करें..</string>
+    <string name="description1">कला के एक टुकड़े में आप जिन स्थानों को जानते हैं, उन्हें देखने के बारे में कुछ विशेष रूप से आकर्षक है - चाहे वह फिल्म में हो, या तस्वीर में, या पेंटिंग में।</string>
+    <string name="description2">दुनिया एक किताब है और जो लोग यात्रा नहीं करते वे केवल एक पृष्ठ पढ़ते हैं।</string>
+    <string name="description3">रात के खाने का समय एक पवित्र, खुशी का समय होता है जब सभी को एक साथ और आराम से रहना चाहिए।</string>
+    <string name="description4">जीवन का उद्देश्य इसे जीना है, इसका स्वाद लेना है, सबसे अधिक अनुभव करना है, नए और समृद्ध अनुभव के लिए उत्सुकता से और बिना किसी डर के पहुंचना है।</string>
+</resources>

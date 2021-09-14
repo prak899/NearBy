@@ -50,24 +50,24 @@ public class NearBy extends FragmentActivity implements OnMapReadyCallback,
         LocationListener{
 
 
-    private GoogleMap mMap;
-    private GoogleApiClient client;
-    private LocationRequest locationRequest;
-    private Location lastlocation;
-    private Marker currentLocationmMarker;
-    public static final int REQUEST_LOCATION_CODE = 99;
-    int PROXIMITY_RADIUS = 10000;
-    double latitude,longitude;
+        private GoogleMap mMap;
+        private GoogleApiClient client;
+        private LocationRequest locationRequest;
+        private Location lastlocation;
+        private Marker currentLocationmMarker;
+        public static final int REQUEST_LOCATION_CODE = 99;
+        int PROXIMITY_RADIUS = 10000;
+        double latitude,longitude;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_maps);
 
-        statusCheck();
+        //statusCheck();
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M)
         {
-            checkLocationPermission();
+            //checkLocationPermission();
 
         }
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.

@@ -62,10 +62,10 @@ public class IntroActivity extends AppCompatActivity {
 
         // fill list screen
         final List<ScreenItem> mList = new ArrayList<>();
-        mList.add(new ScreenItem("Check Locations","There is something particularly fascinating about seeing places you know in a piece of art - be that in a film, or a photograph, or a painting.", R.mipmap.ic_launcher));
-        mList.add(new ScreenItem("Make a Move","The world is a book and those who do not travel read only one page.", R.drawable.img2));
-        mList.add(new ScreenItem("Go For Dine","The dinner hour is a sacred, happy time when everyone should be together and relaxed.", R.drawable.img1));
-        mList.add(new ScreenItem("Explore Now...","THE PURPOSE OF LIFE IS TO LIVE IT, TO TASTE IT, TO EXPERIENCE TO THE UTMOST, TO REACH OUT EAGERLY AND WITHOUT FEAR FOR NEWER AND RICHER EXPERIENCE.", R.drawable.img3));
+        mList.add(new ScreenItem(getString(R.string.check_locations),getString(R.string.description1), R.mipmap.ic_launcher));
+        mList.add(new ScreenItem(getString(R.string.make_a_move),getString(R.string.description2), R.drawable.img2));
+        mList.add(new ScreenItem(getString(R.string.go_for_dine),getString(R.string.description3), R.drawable.img1));
+        mList.add(new ScreenItem(getString(R.string.explore_now),getString(R.string.description4), R.drawable.img3));
 
         // setup viewpager
         screenPager =findViewById(R.id.screen_viewpager);

@@ -53,7 +53,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="onClick"
-                android:text="Hospitals"
+                android:text="@string/hospitals"
                 android:layout_margin="5dp"/>
 
             <Button
@@ -65,7 +65,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="onClick"
-                android:text="Schools" />
+                android:text="@string/schools" />
 
             <Button
                 android:layout_margin="5dp"
@@ -76,7 +76,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="onClick"
-                android:text="Restautants" />
+                android:text="@string/restautants" />
 
             <Button
                 android:layout_margin="5dp"
@@ -87,7 +87,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="onClick"
-                android:text="ATM" />
+                android:text="@string/atm" />
         </LinearLayout>
 
     </LinearLayout>
