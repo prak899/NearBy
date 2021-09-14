@@ -29,4 +29,12 @@
     <string name="description2">दुनिया एक किताब है और जो लोग यात्रा नहीं करते वे केवल एक पृष्ठ पढ़ते हैं।</string>
     <string name="description3">रात के खाने का समय एक पवित्र, खुशी का समय होता है जब सभी को एक साथ और आराम से रहना चाहिए।</string>
     <string name="description4">जीवन का उद्देश्य इसे जीना है, इसका स्वाद लेना है, सबसे अधिक अनुभव करना है, नए और समृद्ध अनुभव के लिए उत्सुकता से और बिना किसी डर के पहुंचना है।</string>
+    <string name="english">English</string>
+    <string name="suggestion">Suggestion</string>
+    <string name="career">Career</string>
+    <string name="medical">Medical</string>
+    <string name="food">Food</string>
+    <string name="gym">Gym</string>
+    <string name="settings">Settings</string>
+    <string name="delete">Delete</string>
 </resources>
